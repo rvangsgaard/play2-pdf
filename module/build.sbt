@@ -6,14 +6,14 @@ version := "1.9.1"
 
 lazy val root = (project in file(".")).enablePlugins(PlayMinimalJava)
 
-scalaVersion := "2.12.8"
+scalaVersion := "2.13.0"
 
 crossPaths := false
 
 libraryDependencies ++= Seq(
   "commons-io" % "commons-io" % "2.6",
-  "org.xhtmlrenderer" % "flying-saucer-pdf-itext5" % "9.1.16",
-  "nu.validator.htmlparser" % "htmlparser" % "1.4"
+  "org.xhtmlrenderer" % "flying-saucer-pdf-itext5" % "9.1.18",
+  "nu.validator" % "htmlparser" % "1.4.14"
 )
 
 resolvers ++= Seq(
